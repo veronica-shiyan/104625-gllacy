@@ -9,6 +9,23 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+    <!--input type="radio" name="point" id="slide1" checked>
+    <input type="radio" name="point" id="slide2">
+    <input type="radio" name="point" id="slide3">
+    <ul class="body-slides">
+      <li class="slides slide1">
+        <span>Крем-брюле и пломбир с малиновым джемом</span>
+        <button class="big btn">Давайте оба!</button>
+      </li>
+      <li class="slides slide2">
+        <span>Шоколадный пломбир и лимонный сорбет</span>
+        <button class="big btn">Давайте оба!</button>
+      </li>
+      <li class="slides slide3">
+        <span>Пломбир с помадкой и клубничный щербет</span>
+        <button class="big btn">Давайте оба!</button>
+      </li>
+    </ul-->
     <header class="main-header main-wrapper">
       <div class="header-row-first clearfix">
         <a class="index-logo">
@@ -42,11 +59,16 @@
       </div>
       <div class="header-row-second clearfix">
         <div class="header-contacts">
-          <span>С 10 до 20, ежедневно</span><br>
+          <span>С 10 до 20, ежедневно</span>
           <span class="phone">8 812 450-25-25</span>
         </div>
       </div>
     </header>
+    <!--div class="controls main-wrapper">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+    </div-->
     <main class="main-wrapper">
       <div class="stock clearfix">
         <div class="banner left">
@@ -62,71 +84,67 @@
       </div>
       <ul class="product">
         <li>
-          <a href="#">
+          <a class="product-name" href="#">
             <img class="product-image" alt="ice-cream" src="img/ice-cream-1.png">
-            <img class="mark-hit" width="61" height="61" alt="Хит" src="img/mark-hit.png">
             <div class="price">
               <span>310&#8381;</span>
               <span>/кг</span>
             </div>
-          Сливочное с апельсиновым джемом и цитрусовой стружкой
+          <p class="product-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           </a>
           <a class="btn" href="#">Быстрый просмотр</a>
         </li>
         <li>
-          <a href="#">
+          <a class="product-name" href="#">
             <img class="product-image" alt="ice-cream" src="img/ice-cream-2.png">
-            <img class="mark-hit" width="61" height="61" alt="Хит" src="img/mark-hit.png">
             <div class="price">
               <span>380&#8381;</span>
               <span>/кг</span>
             </div>
-          Сливочно-кофейное с кусочками шоколада
+          <p class="product-description">Сливочно-кофейное с кусочками шоколада</p>
           </a>
           <a class="btn" href="#">Быстрый просмотр</a>
         </li>
         <li>
-          <a href="#">
+          <a class="product-name" href="#">
             <img class="product-image" alt="ice-cream" src="img/ice-cream-3.png">
-            <img class="mark-hit" width="61" height="61" alt="Хит" src="img/mark-hit.png">
             <div class="price">
               <span>355&#8381;</span>
               <span>/кг</span>
             </div>
-          Сливочно-клубничное с присыпкой из белого шоколада
+          <p class="product-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
           </a>
           <a class="btn" href="#">Быстрый просмотр</a>
         </li>
         <li>
-          <a href="#">
+          <a class="product-name" href="#">
             <img class="product-image" alt="ice-cream" src="img/ice-cream-4.png">
-            <img class="mark-hit" width="61" height="61" alt="Хит" src="img/mark-hit.png">
             <div class="price">
               <span>415&#8381;</span>
               <span>/кг</span>
             </div>
-          Сливочное крем-брюле с карамельной подливкой
+          <p class="product-description">Сливочное крем-брюле с карамельной подливкой</p>
           </a>
           <a class="btn" href="#">Быстрый просмотр</a>
         </li>
         </ul>
-        <div class="promo-info">
+        <div class="promo-info"> <!--Таблица использованна для того, чтобы, при переполнении контентом (изменении контента), верстка не ломалась-->
           <h2>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
           <table>
-            <tr class="row-1">
-              <td>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</td>
-              <td>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</td>
+            <tr class="row">
+              <td class="promo-equipment">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</td>
+              <td class="promo-ingredients">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</td>
             </tr>
-            <tr class="row-2">
-              <td>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</td>
-              <td>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</td>
+            <tr class="row">
+              <td class="promo-ecology">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</td>
+              <td class="promo-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</td>
             </tr>
           </table>
         </div>
         <div class="news-block clearfix">
           <div class="banner left">
             <h3>Новое в нашем блоге</h3>
-            <a class="black-link" href="#">10  способов сервировки фруктовых щербетов к столу</a>
+            <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
           </div>
           <div class="banner right">
             <form action="#" method="get">
@@ -145,9 +163,8 @@
               </p>
               <p>Для заказов по телефону:
                 <br>
-                <b>8 812 450-25-25</b>
-                <br> (с 10 до 20 ежедневно)
-              </p>
+                <b>8 812 450-25-25</b></p>
+                <p>(с 10 до 20 ежедневно)</p>              
               <button class="btn">Форма обратной связи</button>
             </div>
         </div>
@@ -159,20 +176,23 @@
           <a class="social-btn icon-instagram" href="#">Instagram</a>
           <a class="social-btn icon-vk" href="#">VK</a>
       </div>
-      <div class="footer-menu">
-          <div class="column-1">
-            <a class="white-link" href="#">Для поставщиков
-            </a>
-            <a class="white-link" href="#">О производстве</a>
-          </div>
-          <div class="column-2">
-            <a class="white-link" href="#">Наши документы</a>
-            <a class="white-link" href="#">Экологические стандарты</a>
-          </div>
-        </div>
+      <ul class="footer-menu">
+          <li>
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li>  
+            <a href="#">О производстве</a>
+          </li>
+          <li>
+            <a href="#">Наши документы</a>
+          </li>
+          <li>  
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
         <div class="footer-copyright">
           <img width="108" height="37" alt="HTML Academy" src="img/copyright.png">
-          <p>Сделано в <a class="white-link" href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+          <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
         </div>
     </footer>
     <div class="search-form hidden">
@@ -188,8 +208,8 @@
         <br>
         <button class="btn" type="submit">Войти</button>
         <div class="min-wrap">
-          <a class="black-link" href="#">Забыли пароль?</a>
-          <a class="black-link" href="#">Новая регистрация</a>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
         </div>
       </form> 
     </div>

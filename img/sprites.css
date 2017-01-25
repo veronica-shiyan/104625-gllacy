@@ -1,0 +1,106 @@
+.call-back-close, .cart, .cart-active, .check-box-checked, .clean-cart, .enter, .enter-active, .fb-icon, .heart-icon, .instagram-icon, .next, .prev, .radio-checked, .search, .search-active, .tw-icon, .vk-icon{
+	background: url(sprites.png) no-repeat;
+}
+
+.call-back-close{
+	background-position: -59px -359px ;
+	width: 18px;
+	height: 17px;
+}
+
+.cart{
+	background-position: -54px -304px ;
+	width: 21px;
+	height: 20px;
+}
+
+.cart-active{
+	background-position: -55px -255px ;
+	width: 21px;
+	height: 20px;
+}
+
+.check-box-checked{
+	background-position: -58px -205px ;
+	width: 20px;
+	height: 20px;
+}
+
+.clean-cart{
+	background-position: -61px -158px ;
+	width: 11px;
+	height: 11px;
+}
+
+.enter{
+	background-position: -58px -54px ;
+	width: 21px;
+	height: 19px;
+}
+
+.enter-active{
+	background-position: -56px -7px ;
+	width: 21px;
+	height: 19px;
+}
+
+.fb-icon{
+	background-position: -4px -249px ;
+	width: 32px;
+	height: 32px;
+}
+
+.heart-icon{
+	background-position: -9px -356px ;
+	width: 15px;
+	height: 13px;
+}
+
+.instagram-icon{
+	background-position: -3px -147px ;
+	width: 32px;
+	height: 32px;
+}
+
+.next{
+	background-position: -63px -109px ;
+	width: 9px;
+	height: 14px;
+}
+
+.prev{
+	background-position: -13px -406px ;
+	width: 9px;
+	height: 14px;
+}
+
+.radio-checked{
+	background-position: -7px -302px ;
+	width: 21px;
+	height: 22px;
+}
+
+.search{
+	background-position: -10px -208px ;
+	width: 17px;
+	height: 17px;
+}
+
+.search-active{
+	background-position: -8px -108px ;
+	width: 17px;
+	height: 17px;
+}
+
+.tw-icon{
+	background-position: -1px -50px ;
+	width: 32px;
+	height: 32px;
+}
+
+.vk-icon{
+	background-position: 0 0;
+	width: 32px;
+	height: 32px;
+}
+

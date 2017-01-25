@@ -1,0 +1,29 @@
+html,
+body {
+  margin:0;
+  padding:0;
+}
+
+body {
+  height: 100%;
+  background-color: #8da798;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+
+.banner-title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+.promo-info-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}

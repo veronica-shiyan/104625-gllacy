@@ -8,24 +8,21 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body>
-    <!--input type="radio" name="point" id="slide1" checked>
-    <input type="radio" name="point" id="slide2">
-    <input type="radio" name="point" id="slide3">
+  <body class="index">
+    <input class="slade-switch" type="radio" name="point" id="slide-1" checked>
+    <input class="slade-switch" type="radio" name="point" id="slide-2">
+    <input class="slade-switch" type="radio" name="point" id="slide-3">
     <ul class="body-slides">
-      <li class="slides slide1">
+      <li class="slides slide-1">
         <span>Крем-брюле и пломбир с малиновым джемом</span>
-        <button class="big btn">Давайте оба!</button>
       </li>
-      <li class="slides slide2">
+      <li class="slides slide-2">
         <span>Шоколадный пломбир и лимонный сорбет</span>
-        <button class="big btn">Давайте оба!</button>
       </li>
-      <li class="slides slide3">
+      <li class="slides slide-3">
         <span>Пломбир с помадкой и клубничный щербет</span>
-        <button class="big btn">Давайте оба!</button>
       </li>
-    </ul-->
+    </ul>
     <header class="main-header main-wrapper">
       <div class="header-row-first clearfix">
         <a class="index-logo">
@@ -64,20 +61,23 @@
         </div>
       </div>
     </header>
-    <!--div class="controls main-wrapper">
-      <label for="slide1"></label>
-      <label for="slide2"></label>
-      <label for="slide3"></label>
-    </div-->
+    <div class="controls-wrap main-wrapper">
+      <div class="controls ">
+        <label for="slide-1"></label>
+        <label for="slide-2"></label>
+        <label for="slide-3"></label>
+      </div>
+      <button class="big btn" type="button">Давайте оба!</button>
+    </div>
     <main class="main-wrapper">
       <div class="stock clearfix">
         <div class="banner left">
-          <h2>Малинка даром!</h2>
+          <h2 class="banner-title">Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="btn" href="catalog.html">Хочу варенье!</a>
         </div>
         <div class="banner right">
-          <h2>Шоколадки даром!</h2>
+          <h2 class="banner-title">Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="btn" href="catalog.html">Хочу шоколадки!</a>
         </div>
@@ -85,7 +85,7 @@
       <ul class="product">
         <li>
           <a class="product-name" href="#">
-            <img class="product-image" alt="ice-cream" src="img/ice-cream-1.png">
+            <img class="product-image" alt="ice-cream" src="img/ice-cream-1.jpg">
             <div class="price">
               <span>310&#8381;</span>
               <span>/кг</span>
@@ -96,7 +96,7 @@
         </li>
         <li>
           <a class="product-name" href="#">
-            <img class="product-image" alt="ice-cream" src="img/ice-cream-2.png">
+            <img class="product-image" alt="ice-cream" src="img/ice-cream-2.jpg">
             <div class="price">
               <span>380&#8381;</span>
               <span>/кг</span>
@@ -107,7 +107,7 @@
         </li>
         <li>
           <a class="product-name" href="#">
-            <img class="product-image" alt="ice-cream" src="img/ice-cream-3.png">
+            <img class="product-image" alt="ice-cream" src="img/ice-cream-3.jpg">
             <div class="price">
               <span>355&#8381;</span>
               <span>/кг</span>
@@ -118,7 +118,7 @@
         </li>
         <li>
           <a class="product-name" href="#">
-            <img class="product-image" alt="ice-cream" src="img/ice-cream-4.png">
+            <img class="product-image" alt="ice-cream" src="img/ice-cream-4.jpg">
             <div class="price">
               <span>415&#8381;</span>
               <span>/кг</span>
@@ -129,7 +129,7 @@
         </li>
         </ul>
         <div class="promo-info"> <!--Таблица использованна для того, чтобы, при переполнении контентом (изменении контента), верстка не ломалась-->
-          <h2>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+          <h2 class="promo-info-title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
           <table>
             <tr class="row">
               <td class="promo-equipment">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</td>
@@ -176,7 +176,8 @@
           <a class="social-btn icon-instagram" href="#">Instagram</a>
           <a class="social-btn icon-vk" href="#">VK</a>
       </div>
-      <ul class="footer-menu">
+      <div class="footer-menu">
+        <ul>
           <li>
             <a href="#">Для поставщиков</a>
           </li>
@@ -189,11 +190,12 @@
           <li>  
             <a href="#">Экологические стандарты</a>
           </li>
-        </ul>
-        <div class="footer-copyright">
-          <img width="108" height="37" alt="HTML Academy" src="img/copyright.png">
-          <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
-        </div>
+          </ul>
+      </div>
+      <div class="footer-copyright">
+        <img width="108" height="37" alt="HTML Academy" src="img/copyright.png">
+        <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+      </div>
     </footer>
     <div class="search-form hidden">
       <form action="#" method="get">

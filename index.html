@@ -9,9 +9,9 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="index">
-    <input class="slade-switch" type="radio" name="point" id="slide-1" checked>
-    <input class="slade-switch" type="radio" name="point" id="slide-2">
-    <input class="slade-switch" type="radio" name="point" id="slide-3">
+    <input class="slide-switch" type="radio" name="point" id="slide-1" checked>
+    <input class="slide-switch" type="radio" name="point" id="slide-2">
+    <input class="slide-switch" type="radio" name="point" id="slide-3">
     <ul class="body-slides">
       <li class="slides slide-1">
         <span>Крем-брюле и пломбир с малиновым джемом</span>
@@ -62,7 +62,7 @@
       </div>
     </header>
     <div class="controls-wrap main-wrapper">
-      <div class="controls ">
+      <div class="controls">
         <label for="slide-1"></label>
         <label for="slide-2"></label>
         <label for="slide-3"></label>
@@ -72,12 +72,12 @@
     <main class="main-wrapper">
       <div class="stock clearfix">
         <div class="banner left">
-          <h2 class="banner-title">Малинка даром!</h2>
+          <h2 class="stock-title">Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="btn" href="catalog.html">Хочу варенье!</a>
         </div>
         <div class="banner right">
-          <h2 class="banner-title">Шоколадки даром!</h2>
+          <h2 class="stock-title">Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="btn" href="catalog.html">Хочу шоколадки!</a>
         </div>
@@ -157,14 +157,13 @@
         <div class="wrap-map">
           <div id="map" class="map"></div>
             <div class="map-contacts">
-              <p>Адрес главного офиса и офлайн магазина:
-                <br>
-                <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+              <p>Адрес главного офиса<br>
+              и офлайн магазина:
+              <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
               </p>
               <p>Для заказов по телефону:
-                <br>
-                <b>8 812 450-25-25</b></p>
-                <p>(с 10 до 20 ежедневно)</p>              
+              <b>8 812 450-25-25</b>
+              (с 10 до 20 ежедневно)</p>              
               <button class="btn">Форма обратной связи</button>
             </div>
         </div>
@@ -172,20 +171,20 @@
     <footer class="main-footer main-wrapper clearfix">
       <div class="footer-social">
           <a class="social-btn icon-twitter" href="#">Twitter</a>
-          <a class="social-btn icon-fb" href="#">FB</a>
           <a class="social-btn icon-instagram" href="#">Instagram</a>
-          <a class="social-btn icon-vk" href="#">VK</a>
+          <a class="social-btn icon-fb" href="#">Facebook</a>
+          <a class="social-btn icon-vk" href="#">Вконтакте</a>
       </div>
       <div class="footer-menu">
         <ul>
           <li>
-            <a href="#">Для поставщиков</a>
-          </li>
-          <li>  
-            <a href="#">О производстве</a>
+            <a class="heart-mark" href="#">Для поставщиков</a>
           </li>
           <li>
-            <a href="#">Наши документы</a>
+            <a href="#">Наши документы</a>  
+          </li>
+          <li>
+            <a href="#">О производстве</a>
           </li>
           <li>  
             <a href="#">Экологические стандарты</a>

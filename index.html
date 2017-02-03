@@ -33,7 +33,7 @@
             <li>
               <a href="#">Каталог</a>
                 <ul class="sub-menu">
-                  <li><a href="#">Новинки</a></li>
+                  <li><a class="main-link" href="#">Новинки</a></li>
                   <li><a href="item.html">Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
                   <li><a href="#">Фруктовый лед</a></li>
@@ -48,10 +48,34 @@
             </li>
           </ul>
         </nav>
-        <div class="user-block">
-          <a class="search" href="#">Поиск</a>
-          <a class="enter" href="#">Вход</a>
-          <a class="cart" href="#">Пусто</a>
+        <div class="user-block clearfix">
+          <div class="search-position-wrap">
+            <a class="search" href="#">Поиск</a>
+            <div class="search-form">
+              <form action="#" method="get">
+                <input type="text" name="search" placeholder="Что ищем?">
+              </form>
+            </div>
+          </div>
+          <div class="enter-position-wrap">
+            <a class="enter" href="#">Вход</a>
+            <div class="enter-form clearfix">
+              <form action="#" method="post">
+                <input type="text" name="login" placeholder="Электронная почта">
+                <br>
+                <input type="password" name="password" placeholder="Пароль">
+                <br>
+                <button class="btn" type="submit">Войти</button>
+                <div class="min-wrap">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </form> 
+            </div>
+          </div>
+          <div class="cart-position-wrap">
+            <a class="cart" href="#">Пусто</a>
+          </div>
         </div>
       </div>
       <div class="header-row-second clearfix">
@@ -128,18 +152,16 @@
           <a class="btn" href="#">Быстрый просмотр</a>
         </li>
         </ul>
-        <div class="promo-info"> <!--Таблица использованна для того, чтобы, при переполнении контентом (изменении контента), верстка не ломалась-->
+        <div class="promo-info">
           <h2 class="promo-info-title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
-          <table>
-            <tr class="row">
-              <td class="promo-equipment">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</td>
-              <td class="promo-ingredients">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</td>
-            </tr>
-            <tr class="row">
-              <td class="promo-ecology">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</td>
-              <td class="promo-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</td>
-            </tr>
-          </table>
+          <div class="row">
+            <p class="promo-equipment">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+            <p class="promo-ingredients">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          </div>
+          <div class="row">
+            <p class="promo-ecology">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+            <p class="promo-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+          </div>
         </div>
         <div class="news-block clearfix">
           <div class="banner left">
@@ -147,11 +169,13 @@
             <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
           </div>
           <div class="banner right">
-            <form action="#" method="get">
+            <div class="banner-right-bg">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-              <input type="text" name="login" placeholder="Электронная почта">
-              <input class="btn" value="Отправить">
-            </form>
+              <form class="mail" action="#" method="get">
+                <input type="text" name="login" placeholder="Электронная почта">
+                <input class="btn" type="submit" value="Отправить">
+              </form>
+            </div>
           </div>
         </div>
         <div class="wrap-map">
@@ -196,37 +220,19 @@
         <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
       </div>
     </footer>
-    <div class="search-form hidden">
-      <form action="#" method="get">
-        <input type="text" name="search" placeholder="Что ищем?">
-      </form>
-    </div>
-    <div class="enter-form hidden">
-      <form action="#" method="post">
-        <input type="text" name="login" placeholder="Электронная почта">
-        <br>
-        <input type="password" name="password" placeholder="Пароль">
-        <br>
-        <button class="btn" type="submit">Войти</button>
-        <div class="min-wrap">
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-        </div>
-      </form> 
-    </div>
-    <div class="wrap-call-back hidden">
+    <div class="wrap-call-back clearfix hidden">
       <button class="call-back-close" type="button" title="Закрыть">Закрыть</button>
       <h2>Мы обязательно вам ответим!</h2>
-      <form class="call-back" action="#" method="post">
+      <form action="#" method="post">
         <input type="text" name="name" placeholder="Как вас зовут?">
         <br>
         <input type="text" name="mail" placeholder="Ваша почта для ответа?">
         <br>
-        <textarea name="info" rows="7" cols="49" placeholder="Напишите что-нибудь..."></textarea>
+        <textarea name="info" rows="6" cols="49" placeholder="Напишите что-нибудь..."></textarea>
         <br>
         <button class="btn" type="submit">Отправить</button>
       </form>
     </div>
-    <div class="overlay"></div>
+    <div class="overlay hidden"></div>
   </body>
 </html>

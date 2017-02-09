@@ -55,6 +55,7 @@ body {
 }
 
 .btn {
+  cursor: pointer;
   display: inline-block;
   padding: 10px 22px 12px 22px;
   border-radius: 30px;
@@ -227,6 +228,7 @@ body {
 
 .main-menu .sub-menu {
   position: absolute;
+  z-index: 1;
   top: 37px;
   left: -7px;
   display: none;
@@ -1354,6 +1356,7 @@ body {
 }
 
 .sort input[type="submit"] {
+  cursor: pointer;
   display: inline-block;
   vertical-align: bottom;
   margin-bottom: 15px;
@@ -1611,7 +1614,8 @@ body {
   background-position: -61px -158px;
   background-repeat: no-repeat;
   background-color: #f8f7f4;
-  border: none; 
+  border: none;
+  cursor: pointer; 
 }
 
 .in-cart img {
@@ -1678,6 +1682,7 @@ body {
   width: 18px;
   height: 17px;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .wrap-call-back input {

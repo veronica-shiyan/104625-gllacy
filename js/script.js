@@ -1,4 +1,4 @@
-var link = document.querySelector(".open");
+var link = document.querySelector(".btn-open-form");
 var popup = document.querySelector(".wrap-call-back");
 var overlay = document.querySelector(".overlay");
 var login = popup.querySelector("[name=name]");

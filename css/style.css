@@ -1,7 +1,7 @@
 html,
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -29,13 +29,13 @@ body {
 .main-wrapper {
   min-width: 860px;
   max-width: 1146px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 0 2.25%;
 }
 
 .body-slides {
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 40px;
   padding: 0;
   padding-top: 271px;
@@ -57,6 +57,7 @@ body {
 .btn {
   cursor: pointer;
   display: inline-block;
+  vertical-align: top;
   padding: 10px 22px 12px 22px;
   border-radius: 30px;
   background: linear-gradient(to top, #f26843, #e74a35);
@@ -97,7 +98,7 @@ body {
 
 .slide-switch:nth-of-type(1):checked ~ .site-wrapper {
   background-color: #849d8f;
-  background-image: url(../img/main-background-1.png); 
+  background-image: url(../img/main-background-1.png);
 }
 
 .slide-switch:nth-of-type(2):checked ~ .site-wrapper {
@@ -107,7 +108,7 @@ body {
 
 .slide-switch:nth-of-type(3):checked ~ .site-wrapper {
   background-color: #9d8b84;
-  background-image: url(../img/main-background-3.png); 
+  background-image: url(../img/main-background-3.png);
 }
 
 .slide-switch {
@@ -128,6 +129,7 @@ body {
 
 .controls label {
   display: inline-block;
+  vertical-align: top;
   height: 17px;
   width: 17px;
   margin-right: 8px;
@@ -153,7 +155,7 @@ body {
 .site-wrapper label[for="slide-1"]:hover,
 .site-wrapper label[for="slide-2"]:hover,
 .site-wrapper label[for="slide-3"]:hover {
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255, 255, 255, 0.4);
   transition: background-color 0.5s ease;
 }
 
@@ -254,7 +256,7 @@ body {
 .main-menu > li > a:active {
   box-shadow: inset 0 2px 1px #696969;
   background-color: #ededed;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .main-menu > li > .active,
@@ -333,7 +335,7 @@ body {
   border-radius: 20px;
 }
 
-.user-block  div:last-child {
+.user-block div:last-child {
   margin-right: 0;
 }
 
@@ -443,18 +445,18 @@ body {
 .stock .left {
   background-color: #6f0919;
   background-image: url(../img/banner-left-bg.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 .stock .right {
   background-color: #523326;
   background-image: url(../img/banner-right-bg.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 .stock-title {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
@@ -498,7 +500,7 @@ body {
 .product-name::after {
   content: url(../img/mark-hit.png);
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
 }
 
@@ -522,7 +524,7 @@ body {
   margin-left: 0;
   margin-bottom: -50px;
   background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   padding-left: 1.15%;
   padding-right: 1.15%;
@@ -658,7 +660,7 @@ body {
 .promo-info p::before {
   position: absolute;
   top: 7px;
-  left: 0px;
+  left: 0;
 }
 
 .promo-info .promo-equipment::before {
@@ -679,7 +681,7 @@ body {
 
 .news-block {
   margin-bottom: 40px;
- }
+}
 
 .news-block .left {
   min-height: 220px;
@@ -743,9 +745,9 @@ body {
 }
 
 .news-block .mail {
- position: relative;
- padding-right: 140px;
- vertical-align: bottom;
+  position: relative;
+  padding-right: 140px;
+  vertical-align: bottom;
 }
 
 .news-block .btn {
@@ -774,18 +776,26 @@ body {
 .wrap-map {
   position: relative;
   min-width: 900px;
-  max-width: 1200px;
-  margin-left: -2.25%;
-  margin-right: -2.25%;
+  max-width: 100%;
+  height: 430px;
   background-image: url(../img/map-static.jpg);
   background-repeat: no-repeat;
-  background-position: 30% 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrap-map .main-wrapper {
+  position: relative;
+  height: 100%;
 }
 
 .map {
-  min-width:900px; 
-  max-width:100%; 
-  height:430px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 900px;
+  width: 100%;
+  height: 430px;
 }
 
 .map-contacts {
@@ -796,12 +806,12 @@ body {
   right: 2.25%;
   top: 63px;
   background-color: #fdfefe;
-  border-radius: 12px; 
-  padding: 31px 25px; 
+  border-radius: 12px;
+  padding: 31px 25px;
 }
 
 .map-contacts p {
-  margin-bottom: 23px; 
+  margin-bottom: 23px;
   margin-top: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
@@ -821,6 +831,8 @@ body {
 
 .map-contacts .btn {
   width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .main-footer {
@@ -844,7 +856,7 @@ body {
   height: 32px;
   margin-right: 11px;
   border-radius: 50%;
-  border: 3px solid rgba(255,255,255,0.3);
+  border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
 .social-btn:last-child {
@@ -975,6 +987,7 @@ body {
   color: #ffbc9e;
 }
 
+
 /*item-page*/
 
 .inner-page .cart::before {
@@ -1065,7 +1078,8 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #ffffff;;
+  color: #ffffff;
+  ;
   padding: 0;
   margin-bottom: 5px;
   margin-left: 15px;
@@ -1074,7 +1088,7 @@ body {
 .sort-wrap {
   display: inline-block;
   vertical-align: top;
-  background-color: rgba(255, 255, 255, 0.4); 
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 20px;
   padding: 8px 0 8px 16px;
   margin-right: 14px;
@@ -1090,7 +1104,7 @@ body {
 }
 
 .sort .type-3 {
-  margin-right: 0; 
+  margin-right: 0;
 }
 
 .sort .type-1 {
@@ -1151,7 +1165,7 @@ body {
   position: relative;
   width: 190px;
   height: 20px;
-  padding: 16px 15px 0 15px; 
+  padding: 16px 15px 0 15px;
 }
 
 .range {
@@ -1220,7 +1234,7 @@ body {
 
 .sort input[type="checkbox"],
 .sort input[type="radio"] {
-  display: none;            
+  display: none;
 }
 
 .sort input[type="radio"] + label {
@@ -1363,7 +1377,7 @@ body {
   padding: 7px 27px;
   border: 2px solid #ffffff;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.4); 
+  background-color: rgba(255, 255, 255, 0.4);
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1382,8 +1396,8 @@ body {
   background-color: #ededed;
   box-shadow: inset 0 2px 1px #696969;
   color: #363636;
-  border: 0px;
-  padding: 9px 29px; 
+  border: 0;
+  padding: 9px 29px;
 }
 
 .inner-page .product {
@@ -1474,7 +1488,9 @@ body {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+
 /*hover*/
+
 .search-position-wrap,
 .enter-position-wrap,
 .cart-position-wrap {
@@ -1508,7 +1524,7 @@ body {
   border-radius: 3px;
 }
 
-.search-form input[placeholder], 
+.search-form input[placeholder],
 .enter-form input[placeholder] {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
@@ -1517,7 +1533,7 @@ body {
   color: #999999;
 }
 
-.search-position-wrap:hover .search-form{
+.search-position-wrap:hover .search-form {
   display: block;
 }
 
@@ -1533,11 +1549,11 @@ body {
   padding-top: 2px;
   padding-bottom: 2px;
   border: 1px solid #d3d3d2;
-  border-radius: 3px; 
+  border-radius: 3px;
 }
 
 .enter-form .btn {
-  padding: 10px 25px; 
+  padding: 10px 25px;
   float: left;
 }
 
@@ -1561,7 +1577,7 @@ body {
   color: #ec593c;
 }
 
-.enter-position-wrap:hover .enter-form{
+.enter-position-wrap:hover .enter-form {
   display: block;
 }
 
@@ -1615,7 +1631,7 @@ body {
   background-repeat: no-repeat;
   background-color: #f8f7f4;
   border: none;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .in-cart img {
@@ -1624,7 +1640,7 @@ body {
 
 .in-cart .btn {
   float: right;
-  padding: 10px 14px; 
+  padding: 10px 14px;
 }
 
 .in-cart span {
@@ -1632,10 +1648,9 @@ body {
   font-style: normal;
 }
 
-.cart-position-wrap:hover .in-cart{
+.cart-position-wrap:hover .in-cart {
   display: block;
 }
-
 
 .overlay {
   position: absolute;
@@ -1643,11 +1658,11 @@ body {
   left: 0;
   z-index: 3;
   height: 100%;
-  width: 100%; 
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.wrap-call-back {  
+.wrap-call-back {
   position: fixed;
   z-index: 4;
   width: 427px;
@@ -1656,7 +1671,7 @@ body {
   background-color: #f8f7f4;
   border-radius: 10px;
   right: 32%;
-  top: 30%;  
+  top: 30%;
 }
 
 .wrap-call-back h2 {
@@ -1715,7 +1730,7 @@ body {
   padding: 9px 2px 0 15px;
 }
 
-.wrap-call-back input[placeholder], 
+.wrap-call-back input[placeholder],
 .wrap-call-back textarea[placeholder] {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
@@ -1725,7 +1740,7 @@ body {
 }
 
 .wrap-call-back .btn {
-  float: right; 
+  float: right;
   padding: 10px 24px;
 }
 
@@ -1742,18 +1757,40 @@ body {
 }
 
 @keyframes overlay {
-from { background-color: rgba(0, 0, 0, 0); }
-30%  { background-color: rgba(0, 0, 0, 0.2); }
-60%  { background-color: rgba(0, 0, 0, 0.4); }
-to   { background-color: rgba(0, 0, 0, 0.5); }
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  30% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  60% {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 @keyframes call-back {
-0%   { transform: scale(0); }
-20%  { transform: scale(0.2); }
-40%  { transform: scale(0.4); }
-60%  { transform: scale(0.6); }
-80%  { transform: scale(0.8); }
-90%  { transform: scale(0.9); }
-100% { transform: scale(1); }
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(0.2);
+  }
+  40% {
+    transform: scale(0.4);
+  }
+  60% {
+    transform: scale(0.6);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  90% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
